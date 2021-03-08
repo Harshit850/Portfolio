@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/skills.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
     <!-- Fav Icon -->
     <link
       rel="stylesheet"
@@ -33,10 +37,10 @@
         </div>
         <div class="menu">
           <ul class="links">
-            <li><a href="/" class="link">Home</a></li>
+            <li><a href="#" class="link">Home</a></li>
             <li><a href="#skills" class="link">Skills</a></li>
             <li><a href="#projects" class="link">Projects</a></li>
-            <li><a href="#contact" class="link">Contact</a></li>
+            <li><a href="#contact-form" class="link">Contact</a></li>
           </ul>
         </div>
         <!-- say hello -->
@@ -57,7 +61,12 @@
               I am a front-end developer and general doodler with a keen eye for
               creating engaging UI, bringing products to life.
             </p>
-            <a href="#" class="portfolio-btn">See My Resume</a>
+            <a
+              href="https://drive.google.com/file/d/167H90LLbcGXEndrAXHt96_0AUjvh4cob/view?usp=sharing"
+              target="_blank"
+              class="portfolio-btn"
+              >See My Resume</a
+            >
           </div>
         </div>
       </div>
@@ -144,7 +153,12 @@
             capabilities in the web app. Check out the Github repo for more
             info.
           </p>
-          <a href="#" class="project-btn">Github Repo</a>
+          <a
+            href="https://github.com/Harshit850/Alan-Ai-News-App"
+            class="project-btn"
+            target="_blank"
+            >Github Repo</a
+          >
         </div>
       </div>
       <!-- individual project -->
@@ -158,7 +172,12 @@
             A simple blogging site, where admin can post content and other users
             can see it. Build with Javascript, NodeJS and ExpressJS.
           </p>
-          <a href="#" class="project-btn">Github Repo</a>
+          <a
+            href="https://github.com/Harshit850/Blog"
+            class="project-btn"
+            target="_blank"
+            >Github Repo</a
+          >
         </div>
       </div>
       <!-- individual project -->
@@ -173,7 +192,12 @@
             it when i was learning front end web development. I used only HTML,
             CSS and Bootstrap4.
           </p>
-          <a href="#" class="project-btn">Github Repo</a>
+          <a
+            href="https://github.com/Harshit850/TD"
+            class="project-btn"
+            target="_blank"
+            >Github Repo</a
+          >
         </div>
       </div>
       <!-- individual project -->
@@ -189,16 +213,24 @@
             work to build this. You should definitely check this project on
             Github.
           </p>
-          <a href="#" class="project-btn">Github Repo</a>
+          <a
+            href="https://github.com/Harshit850/Awesome-Todo-List-REACT"
+            class="project-btn"
+            target="_blank"
+            >Github Repo</a
+          >
         </div>
       </div>
     </section>
 
     <!-- Contact us section -->
     <section id="contact-form">
-      <h2>Want to Say Hi?</h2>
+      <h2 class="h2-heading">Want to Say Hi?</h2>
       <div class="say-hi-form">
-        <form action="mailto:kumarharshit850@gmail.com">
+        <form
+          action="mailto:mailto:kumarharshit850@gmail.com?subject=Greeting&body=Hi, Harshit"
+          target="_blank"
+        >
           <div class="form-control">
             <input type="text" name="name" placeholder="Your Name" required />
           </div>
@@ -210,16 +242,36 @@
               required
             />
           </div>
-          <div class="form-control">
-            <input
-              type="text"
-              name="message"
-              placeholder="Your Message"
-              required
-            />
-          </div>
-          <button type="submit">Submit</button>
+          <button type="submit" class="say-hi">Say Hi!</button>
         </form>
+      </div>
+    </section>
+
+    <!-- Contact links -->
+    <section id="contact-links">
+      <div class="footer">
+        <h2>Get In Touch</h2>
+        <div class="social-links">
+          <div class="social-link">
+            <a
+              href="https://www.linkedin.com/in/harshit-kumar-ab98a3191/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin fa-3x dark-blue"></i>
+            </a>
+          </div>
+          <div class="social-link">
+            <a href="https://github.com/Harshit850" target="_blank">
+              <i class="fab fa-github fa-3x"></i>
+            </a>
+          </div>
+          <div class="social-link">
+            <a href="https://wa.me/919557789396" target="_blank">
+              <i class="fab fa-whatsapp-square fa-3x green"></i>
+            </a>
+          </div>
+          <p>Copyright&copy;Harshit kumar</p>
+        </div>
       </div>
     </section>
   </body>
