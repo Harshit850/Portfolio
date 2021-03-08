@@ -6,9 +6,16 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+}
+
+input:focus {
+    outline: none;
 }
 
 /* utilities */
@@ -20,12 +27,28 @@ a {
     text-decoration: none;
 }
 
+section {
+    margin-bottom: 100px;
+}
+
 .red {
     color: #ff4646;
 }
 
 .blue {
     color: #51c2d5;
+}
+
+.dark-blue {
+    color: blue;
+}
+
+.green {
+    color: darkgreen;
+}
+
+.black {
+    color: #000;
 }
 
 .yellow {
@@ -161,7 +184,7 @@ h1
     justify-content: center;
     align-items: right;
     width: 90%;
-    margin: auto auto 50px auto;
+    margin: auto auto 50px 70px;
 }
 
 .skill-text {
@@ -217,12 +240,16 @@ p
 
 
 /* Projects Section */
+#projects h1 {
+    margin-bottom: 30px;
+}
+
 .project {
     padding: 20px;
     display: flex;
     justify-content: left;
     align-items: center;
-    width: 75%;
+    width: 80%;
     margin: auto;
     margin-bottom: 2rem;
     border-radius: 10px;
@@ -248,3 +275,124 @@ p
 }
 
 /* Contact section */
+#contact-form {
+    width: 60%;
+    margin: auto;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 4px 10px 30px rgba(24, 139, 119, 0.3);
+}
+
+#contact-form h2 {
+    padding: 20px;
+    font-size: 3.2rem;
+    color: #1c3548;
+    text-align: center;
+}
+
+#contact-form input[type='text'],
+#contact-form input[type='email'] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;  
+}
+
+.say-hi-form {
+    width: 80%;
+    margin: auto;
+}
+
+.form-control {
+    margin-top: 10px;
+}
+
+.say-hi-form button {
+    margin-top: 25px;
+    width: 160px;
+    height: 35px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #1db096;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    box-shadow: 4px 10px 30px rgba(24, 139, 119, 0.3);
+}
+
+.say-hi-form button:hover{
+    background-color: #23cdaf;
+    transition: all ease 0.2s;
+}
+
+
+/* Media Queries */
+@media(max-width: 900px) {
+    .content {
+        width: 100%;
+    }
+    .model {
+        width: 400px;
+        height: 400px;
+    }
+    .main-text, .model {
+        margin: 10px;
+    }
+    .skill-box {
+        width: 400px;
+        height: 400px;
+    }
+    .main-text h1 {
+        font-size: 3rem;
+    }
+    .skill-heading h2,
+    #projects h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-des h2 {
+        font-size: 1.8rem;
+    }
+
+    .main-text p,
+    .s-box-text p,
+    .project-des p {
+        font-size: 1rem;
+    }
+    .portfolio-btn {
+        margin: auto;
+    }
+
+    .skill-box {
+        height: 90px;
+    }
+}
+
+@media(max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        height: 65px;
+        padding: 0px 30px;
+    }
+    .menu {
+        display: none;
+    }
+
+    .project-image,
+    .model,
+    .skill-img {
+        display: none;
+    }
+
+    .project-btn {
+        display: none;
+    }
+
+    #contact-form {
+        height: 400px;
+    }
+
+}
