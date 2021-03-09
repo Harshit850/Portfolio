@@ -136,6 +136,15 @@ section {
     }
 
     section {
-        margin-bottom: 0;
+        margin: 0;
+    }
+
+    .say-hi {
+        display: none;
+    }
+
+    .text {
+        margin: auto;
+        padding: 30px;
     }
 }
