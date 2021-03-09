@@ -1,9 +1,10 @@
 
 /* Main section */
 #main {
-    height: 100vh;
+    height: 90vh;
     position: relative;
     width: 100%;
+    margin-bottom: 0;
 }
 
 /* navbar */
@@ -63,7 +64,8 @@ nav ul li a:hover {
 
 /* content section */
 .content {
-    width: 90%;
+    width: 85%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
