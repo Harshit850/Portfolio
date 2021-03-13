@@ -22,6 +22,10 @@ nav {
     margin-top: 0.7rem;
 }
 
+.link.active {
+    border-bottom: 5px solid #2adabc;
+}
+
 span {
     color: #40c6c4;
 }
@@ -29,6 +33,10 @@ span {
 .logo hr {
     height: 4px;
     background-color: #000;
+}
+
+.logo h2 {
+    user-select: none;
 }
 
 nav ul {
@@ -120,6 +128,7 @@ h1
 .portfolio-btn:hover,
 .project-btn:hover
 {
+    transform: scale(0.98);
     background-color: #23cdaf;
     transition: all ease 0.2s;
 }

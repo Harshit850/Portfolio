@@ -41,7 +41,7 @@
     margin-top: 25px;
     cursor: pointer;
     width: 160px;
-    height: 35px;
+    height: 40px;
     border: none;
     justify-content: center;
     align-items: center;
@@ -54,6 +54,7 @@
 }
 
 .say-hi-form button:hover{
+    transform: scale(0.98);
     background-color: #23cdaf;
     transition: all ease 0.2s;
 }
@@ -86,6 +87,7 @@
 
 .social-link:hover {
     top: -10px;
+    padding-bottom: 5px;
     border-bottom: 4px solid #19456b;
 }
 
