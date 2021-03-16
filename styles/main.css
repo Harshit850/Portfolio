@@ -23,6 +23,7 @@ nav {
 }
 
 .link.active {
+    color: #2adabc;
     border-bottom: 5px solid #2adabc;
 }
 

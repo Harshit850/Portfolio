@@ -11,6 +11,7 @@ html {
 }
 
 body {
+    margin: 0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -105,10 +106,6 @@ section {
         height: 90px;
     }
 
-    #contact-form{
-        display: none;
-    }
-
     section {
         margin-bottom: 0;
     }
@@ -117,10 +114,13 @@ section {
 
 @media(max-width: 768px) {
     nav {
-        justify-content: space-between;
         height: 65px;
-        padding: 0px 30px;
     }
+
+    .text {
+        width: 300px;
+    }
+
     .menu {
         display: none;
     }
@@ -139,8 +139,9 @@ section {
         margin: 0;
     }
 
-    .say-hi {
-        display: none;
+    .project-btn.center, 
+    .say-hi-form button {
+        margin: 1rem auto;
     }
 
     .skill-heading h2 {
